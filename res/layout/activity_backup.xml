@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Tab for choosing items will be backup"/>
+        <CheckBox 
+            android:id="@+id/cbChooseAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Choose All 4 items"/>
+        
+    </LinearLayout>
+    <EditText 
+        	android:id="@+id/edtSearchByName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search by name"/>
+	<ListView 
+	    android:id="@+id/lvContact"
+	    android:layout_marginTop="15dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    ></ListView>
+	<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+
+        <Button
+            android:id="@+id/btnBackup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textStyle="bold"
+            android:text="Back up" />
+    </RelativeLayout>
+</LinearLayout>
